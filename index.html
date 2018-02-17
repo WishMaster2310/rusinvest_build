@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Руссинвест | Главная страница</title>
-  <meta content="Описание страницы" name="description">
+  <meta content="На протяжении многих лет мы стабильно входим в число шести крупнейших инвестиционных компаний России по величине собственного капитала." name="description">
   <meta content="" name="keywords">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="telephone=no" name="format-detection">
   <meta property="og:title" content="Главная страница">
-  <meta property="og:description" content="Описание страницы">
+  <meta property="og:description" content="На протяжении многих лет мы стабильно входим в число шести крупнейших инвестиционных компаний России по величине собственного капитала.">
 
   <link rel="shortcut icon" href="favicon.ico">
 
@@ -21,6 +21,18 @@
 
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-store">
+    <linearGradient id="green-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a14a" />
+      <stop offset="30%" stop-color="#60a14a" />
+      <stop offset="100%" stop-color="#98e37e" />
+    </linearGradient>
+
+    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82b7ff" />
+      <stop offset="50%" stop-color="#82b7ff" />
+      <stop offset="100%" stop-color="#a8d3ff" />
+    </linearGradient>
+
     <symbol id="i-facebook" viewBox="0 0 32 32">
       <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z" />
     </symbol>
@@ -73,13 +85,13 @@
         <div class="header__col header__col--nav">
           <nav class="nav">
 
-            <a class="nav__item" href="/">Инвестиции</a>
+            <a class="nav__item " href="/invest.html">Инвестиции</a>
 
-            <a class="nav__item" href="/">Трейдинг</a>
+            <a class="nav__item " href="/trading.html">Трейдинг</a>
 
-            <a class="nav__item" href="/">Обучение</a>
+            <a class="nav__item " href="/">Обучение</a>
 
-            <a class="nav__item" href="/">Корпоративным клиентам</a>
+            <a class="nav__item " href="/">Корпоративным клиентам</a>
 
           </nav>
           <div class="nav nav--variant-small">
@@ -105,9 +117,11 @@
               <a href="#" class="bar__btn"><span class="svg-icon svg-icon--i-phone "><svg xmlns="http://www.w3.org/2000/svg" class="svg-icon__glyph" role="img"><use xlink:href="#i-phone"></use></svg></span></a>
             </div>
             <div class="bar__item">
-              <a href="#" class="bar__btn bar__btn--lg">
-                <span class="btn__text">Открыть счет</span>
-              </a>
+              <a href="#" class="btn btn--default btn--with-arrow">
+
+            Открыть счет
+
+          </a>
             </div>
           </div>
         </div>
@@ -121,11 +135,12 @@
       <div class="hero__slider">
 
         <div class="hero__slide " style="background-image: url(uploads/bitmap.jpg)">
-          <div class="hero__container ">
+          <div class="hero__container">
+
             <div class="hero__row">
               <div class="hero__column">
                 <div class="hero__data">
-                  <h2 class="hero__title">25 лет на фондовом рынке вместе с вами</h2>
+                  <h2 class="hero__title">25&nbsp;лет на&nbsp;фондовом рынке вместе с&nbsp;вами</h2>
                   <p class="hero__text">На&nbsp;протяжении многих лет мы&nbsp;стабильно входим в&nbsp;число шести крупнейших инвестиционных компаний России по&nbsp;величине собственного капитала.</p>
                 </div>
               </div>
@@ -170,7 +185,8 @@
         </div>
 
         <div class="hero__slide hero__slide--theme-dark" style="background-image: url(uploads/bitmap2.jpg)">
-          <div class="hero__container ">
+          <div class="hero__container">
+
             <div class="hero__row">
               <div class="hero__column">
                 <div class="hero__data">
@@ -219,7 +235,8 @@
         </div>
 
         <div class="hero__slide " style="background-image: url(uploads/bitmap.jpg)">
-          <div class="hero__container ">
+          <div class="hero__container">
+
             <div class="hero__row">
               <div class="hero__column">
                 <div class="hero__data">
@@ -642,7 +659,7 @@
     <div class="container">
       <div class="grid">
         <div class="grid__col grid__col--60">
-          <div class="poster poster--2by1 poster--text-large">
+          <div class="poster poster--textpreset-3024">
             <div class="poster__image" style="background-image: url(uploads/poster232323.jpg)"></div>
             <div class="poster__data">
               <div class="poster__data-inner">
@@ -653,7 +670,7 @@
           </div>
         </div>
         <div class="grid__col grid__col--30">
-          <div class="poster poster--theme-green">
+          <div class="poster poster--textpreset-1816 poster--theme-green">
             <div class="poster__image" style="background-image: url(uploads/bitmap-copy-2.jpg)"></div>
             <div class="poster__data">
               <div class="poster__data-inner">
@@ -754,7 +771,7 @@
           <div class="newstab__grid-aside">
             <div class="panel">
               <div class="panel__inner">
-                <div>
+                <div class="panel__inner-wrapp">
                   <form action="#" class="panel-form">
                     <div class="panel-form__title">Подписаться на&nbsp;новости</div>
                     <div class="panel-form__row">
@@ -768,7 +785,7 @@
                         <option value="3">СМИ о нас</option>
                       </select>
                     </div>
-                    <button class="panel-form__btn" type="submit">Подписаться</button>
+                    <button class="btn btn--white btn--block" type="submit">Подписаться</button>
                   </form>
                 </div>
 
@@ -941,9 +958,139 @@
     </div>
   </footer>
 
-  <script src="javascripts/jquery-3.3.1.min.js"></script>
-  <script src="javascripts/libs.js"></script>
-  <script src="javascripts/common.js"></script>
+  <!--  PageList  -->
+  <style>
+    #pagelist {
+      position: fixed;
+      width: 320px;
+      background-color: #272c31;
+      background: repeating-linear-gradient(
+        45deg,
+        #272c31,
+        #272c31 10px,
+        #2b3136 10px,
+        #2b3136 20px
+      );
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      font-family: inherit;
+      transform: translateX(-100%);
+      transition: transform .5s, box-shadow .3s;
+      box-shadow: 8px 0 20px rgba(0, 0, 0, 0);
+    }
+  
+    #pagelist ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #pagelist ul li {
+      display: block;
+    }
+  
+    input[name="__pageListInput"] {
+      display: none;
+      
+    }
+  
+    input[name="__pageListInput"]:checked + #pagelist {
+      transform: translateX(0);
+      box-shadow: 8px 0 20px rgba(0, 0, 0, 0.27);
+    }
+  
+    input[name="__pageListInput"]:checked + #pagelist label {
+      opacity: 1;
+    }
+  
+    #pagelist ul li a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 20px;
+  
+      font-size: 14px;
+      line-height: 18px;
+      transition: color .3s, background-color .3s;
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+  
+    #pagelist ul li a:hover {
+      background-color: rgba(0, 0, 0, .35);
+      color: #fff;
+    }
+  
+    #pagelist label{
+      position: absolute;
+      height: 38px;
+      line-height: 36px;
+      background-color: #272c31;
+      left: 100%;
+      top: 0;
+      cursor: pointer;
+      padding-left: 20px;
+      padding-right: 40px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      opacity: .5;
+      transition: opacity .3s;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      white-space: nowrap;
+    }
+  
+    #pagelist label span {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fff;
+      color: #000;
+      position: absolute;
+      font-size: 11px;
+      line-height: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 21px;
+      top: 50%;
+      margin-top: -10px;
+      right: 10px;
+    }
+  
+    #pagelist label:hover {
+      opacity: 1;
+    }
+    #pagelist > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding-top: 32px;
+    }
+  </style>
+  <input type="checkbox" name="__pageListInput" id="__pageListInput">
+  <div id="pagelist">
+    <label for="__pageListInput">pages <span>3</span>
+    </label>
+    <div>
+      <ul>
+        <li><a href="/">1.&nbsp;Главная страница</a>
+        </li>
+        <li><a href="/invest.html">2.&nbsp;Инвестиции</a>
+        </li>
+        <li><a href="/trading.html">3.&nbsp;Трейдинг</a>
+        </li>
+      </ul>
+      <div>
+      </div>
+      <!-- / PageList  -->
+      <script src="javascripts/jquery-3.3.1.min.js"></script>
+      <script src="javascripts/libs.js"></script>
+      <script src="javascripts/common.js"></script>
 </body>
 
 </html>
