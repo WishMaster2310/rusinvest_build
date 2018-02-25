@@ -16,7 +16,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="HandheldFriendly" content="true">
 
+
+
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+
+
+  <script src="javascripts/amcharts/amcharts.js"></script>
+  <script src="javascripts/amcharts/serial.js"></script>
 </head>
 
 <body>
@@ -91,12 +97,12 @@
 
             <a class="nav__item " href="/learn_trading.html">Обучение</a>
 
-            <a class="nav__item " href="/">Корпоративным клиентам</a>
+            <a class="nav__item " href="/corporate.html">Корпоративным клиентам</a>
 
           </nav>
           <div class="nav nav--variant-small">
 
-            <a href="/" class="nav__item ">Аналитика</a>
+            <a href="/analytics.html" class="nav__item ">Аналитика</a>
 
             <a href="/" class="nav__item ">Инвесторам и акционерам</a>
 
@@ -327,12 +333,14 @@
         <div class="invest-slider__outer">
           <div class="invest-slider__list">
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.307%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -348,12 +356,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.207%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.268%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.273%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.374%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -369,12 +379,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.607%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.451%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+26%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -390,12 +402,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.107%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.351%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -411,12 +425,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.307%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -432,12 +448,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.207%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.268%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.273%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.374%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -453,12 +471,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.607%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.451%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+26%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -474,12 +494,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.107%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.351%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -495,12 +517,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.307%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -516,12 +540,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.207%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.268%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.273%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.251%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.374%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -537,12 +563,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.607%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.451%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+26%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/ouline-graph.png" srcset="uploads/ouline-graph2x.png 2x, uploads/ouline-graph3x.png 3x" alt="" />
                   </div>
@@ -558,12 +586,14 @@
             </div>
 
             <div class="invest-slider__item">
-              <a href="/" class="invest-card">
+              <a href="/" class="invest-card" data-chart="%5B%7B%22date%22%3A%221950%22%2C%22value%22%3A-0.107%7D%2C%7B%22date%22%3A%221951%22%2C%22value%22%3A-0.168%7D%2C%7B%22date%22%3A%221952%22%2C%22value%22%3A-0.073%7D%2C%7B%22date%22%3A%221953%22%2C%22value%22%3A-0.027%7D%2C%7B%22date%22%3A%221954%22%2C%22value%22%3A-0.351%7D%2C%7B%22date%22%3A%221955%22%2C%22value%22%3A-0.281%7D%2C%7B%22date%22%3A%221956%22%2C%22value%22%3A-0.348%7D%2C%7B%22date%22%3A%221957%22%2C%22value%22%3A-0.074%7D%2C%7B%22date%22%3A%221958%22%2C%22value%22%3A-0.011%7D%2C%7B%22date%22%3A%221959%22%2C%22value%22%3A-0.074%7D%5D">
                 <div class="invest-card__img">
                   <div class="invest-card__meta">
                     <div class="invest-card__meta-title">+48%</div>
                     <div class="invest-card__meta-text">за 6 мес 2017</div>
                   </div>
+
+                  <div class="invest-card__test"></div>
                   <div class="invest-card__img-inner">
                     <img src="uploads/group-4.png" srcset="uploads/group-42x.png 2x, uploads/group-43x.png 3x" alt="" />
                   </div>
@@ -1073,7 +1103,7 @@
   </style>
   <input type="checkbox" name="__pageListInput" id="__pageListInput">
   <div id="pagelist">
-    <label for="__pageListInput">pages <span>5</span>
+    <label for="__pageListInput">pages <span>7</span>
     </label>
     <div>
       <ul>
@@ -1087,12 +1117,17 @@
         </li>
         <li><a href="/learn_trading.html">5.&nbsp;Обучение</a>
         </li>
+        <li><a href="/corporate.html">6.&nbsp;Корпоративным клиентам</a>
+        </li>
+        <li><a href="/analytics.html">7.&nbsp;Аналитика</a>
+        </li>
       </ul>
       <div>
       </div>
       <!-- / PageList  -->
       <script src="javascripts/jquery-3.3.1.min.js"></script>
       <script src="javascripts/libs.js"></script>
+
       <script src="javascripts/common.js"></script>
 </body>
 

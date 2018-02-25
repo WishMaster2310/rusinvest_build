@@ -16,7 +16,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="HandheldFriendly" content="true">
 
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+
+
+  <script src="javascripts/amcharts/amcharts.js"></script>
+  <script src="javascripts/amcharts/serial.js"></script>
 </head>
 
 <body>
@@ -91,12 +99,12 @@
 
             <a class="nav__item  is-active" href="/learn_trading.html">Обучение</a>
 
-            <a class="nav__item " href="/">Корпоративным клиентам</a>
+            <a class="nav__item " href="/corporate.html">Корпоративным клиентам</a>
 
           </nav>
           <div class="nav nav--variant-small">
 
-            <a href="/" class="nav__item ">Аналитика</a>
+            <a href="/analytics.html" class="nav__item ">Аналитика</a>
 
             <a href="/" class="nav__item ">Инвесторам и акционерам</a>
 
@@ -304,8 +312,19 @@
         </div>
       </div>
 
-      <div class="grid">
-        <div class="grid__col grid__col--68"></div>
+      <div class="grid offset-base">
+        <div class="grid__col grid__col--68">
+          <div class="mapper">
+            <div class="mapper__map" id="placeMap"></div>
+            <div class="mapper__tooltip">
+              <div class="mapper__label">место проведения</div>
+              <div class="mapper__text">
+                город Москва, Нащокинский переулок д 5.
+              </div>
+              <a href="#" class="mapper__link brandlink">Посмотреть на карте</a>
+            </div>
+          </div>
+        </div>
         <div class="grid__col grid__col--28">
           <div class="panel panel--pad3040 panel--textpreset-3012">
             <div class="panel__inner">
@@ -319,8 +338,81 @@
           </div>
         </div>
       </div>
+
+      <div class="offset-base">
+        <div class="title-text title-text--mw660">
+          Если Вас заинтересовали услуги ПАО «ИК РУСС-ИНВЕСТ», получить консультацию по вопросам инвестирования, пройти обучение основам торговли на финансовых рынках вы можете Вы можете связаться со специалистом компании.
+        </div>
+
+        <div class="wrapper wrapper--660">
+          <div class="person-extended">
+            <div class="person-extended__aside">
+              <div class="person person--large">
+                <div class="person__image">
+                  <img src="uploads/person-33.jpg" srcset="uploads/person-332x.jpg 2x, uploads/person-333x.jpg 3x" alt="" />
+                </div>
+                <!--div class="person__data">
+                <div class="person__name"></div>
+                <div class="person__post"></div>
+              </div-->
+              </div>
+            </div>
+            <div class="person-extended__content dotted-bg">
+              <div class="person__name">Алексей Кондрашов</div>
+              <div class="person__post h-mb10">Начальник клиентского отдела</div>
+              <p><b>Телефон</b> 
+                <br>+7 (495) 363-93-80 (доб. 180)</p>
+              <p><b>Email</b> 
+                <br> <a href="mailto:akondrashov@russ-invest.com">akondrashov@russ-invest.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <script>
+    (function(containerId) {
+      var container = document.getElementById(containerId);
+      var options = {
+        center: [55.746861, 37.597998],
+        title: 'Место проведения',
+        text: 'город Москва, Нащокинский переулок д 5.'
+      }
+  
+      var balloonContent = '<h4>'+ options.title +'</h4>';
+  
+      balloonContent += '<p>'+ options.text +'</p>'
+  
+      if(!ymaps) {
+        console.warn("Please, import yandex map script to template");
+        return 
+      }
+  
+      if(!container || !containerId) {
+        console.warn("Can\'t find ement with id: " + containerId);
+        return 
+      }
+  
+      function init () {
+        var map = new ymaps.Map(containerId, {
+            center: options.center,
+            zoom: 14
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+        map.geoObjects.add(
+          new ymaps.Placemark(options.center, {
+            balloonContent: balloonContent
+          })
+        )
+      } 
+  
+      ymaps.ready(init);
+  
+    })('placeMap');
+  </script>
 
   <div class="section section--contacts">
     <div class="container">
@@ -598,7 +690,7 @@
   </style>
   <input type="checkbox" name="__pageListInput" id="__pageListInput">
   <div id="pagelist">
-    <label for="__pageListInput">pages <span>5</span>
+    <label for="__pageListInput">pages <span>7</span>
     </label>
     <div>
       <ul>
@@ -612,12 +704,17 @@
         </li>
         <li><a href="/learn_trading.html">5.&nbsp;Обучение</a>
         </li>
+        <li><a href="/corporate.html">6.&nbsp;Корпоративным клиентам</a>
+        </li>
+        <li><a href="/analytics.html">7.&nbsp;Аналитика</a>
+        </li>
       </ul>
       <div>
       </div>
       <!-- / PageList  -->
       <script src="javascripts/jquery-3.3.1.min.js"></script>
       <script src="javascripts/libs.js"></script>
+
       <script src="javascripts/common.js"></script>
 </body>
 
