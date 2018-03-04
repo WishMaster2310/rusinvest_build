@@ -27,6 +27,15 @@
 
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-store">
+
+    <defs>
+      <pattern id="pattern1" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+        <rect x="2" y="2" width="1" height="1" fill="rgba(0, 0, 0, .1)"></rect>
+        <rect x="1" y="2" width="1" height="1" fill="rgba(0, 0, 0, .05)"></rect>
+        <rect x="2" y="3" width="1" height="1" fill="rgba(0, 0, 0, .05)"></rect>
+      </pattern>
+    </defs>
+
     <linearGradient id="green-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#60a14a" />
       <stop offset="30%" stop-color="#60a14a" />
@@ -38,6 +47,7 @@
       <stop offset="50%" stop-color="#82b7ff" />
       <stop offset="100%" stop-color="#a8d3ff" />
     </linearGradient>
+
 
     <symbol id="i-facebook" viewBox="0 0 32 32">
       <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z" />
@@ -104,7 +114,7 @@
 
             <a href="/analytics.html" class="nav__item ">Аналитика</a>
 
-            <a href="/" class="nav__item ">Инвесторам и акционерам</a>
+            <a href="/investors.html" class="nav__item ">Инвесторам и акционерам</a>
 
             <a href="/about.html" class="nav__item ">О компании</a>
 
@@ -255,6 +265,45 @@
           </div>
           <div class="pillar__title">
             Постоянная аналитическая поддержка
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <img src="uploads/pie_chart_1.png" srcset="uploads/pie_chart_12x.png 2x, uploads/pie_chart_13x.png 3x" alt="" />
+          </div>
+          <div class="pillar__title">
+            Широкая линейка тарифов
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <img src="uploads/group_7.png" srcset="uploads/group_72x.png 2x, uploads/group_73x.png 3x" alt="" />
+          </div>
+          <div class="pillar__title">
+            Электронная подпись
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <img src="uploads/five_stars.png" srcset="uploads/five_stars2x.png 2x, uploads/five_stars3x.png 3x" alt="" />
+          </div>
+          <div class="pillar__title">
+            Стабильность
+          </div>
+          <div class="pillar__text">
+            Эффективная работа компании с 1992 года
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar__icon">
+            <img src="uploads/time_left.png" srcset="uploads/time_left2x.png 2x, uploads/time_left3x.png 3x" alt="" />
+          </div>
+          <div class="pillar__title">
+            Возможность круглосуточного выставления стоп-заявок
           </div>
         </div>
       </div>
@@ -502,10 +551,156 @@
     </div>
   </footer>
 
-  <script src="javascripts/jquery-3.3.1.min.js"></script>
-  <script src="javascripts/libs.js"></script>
+  <!--  PageList  -->
+  <style>
+    #pagelist {
+      position: fixed;
+      width: 320px;
+      background-color: #272c31;
+      background: repeating-linear-gradient(
+        45deg,
+        #272c31,
+        #272c31 10px,
+        #2b3136 10px,
+        #2b3136 20px
+      );
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      font-family: inherit;
+      transform: translateX(-100%);
+      transition: transform .5s, box-shadow .3s;
+      box-shadow: 8px 0 20px rgba(0, 0, 0, 0);
+    }
+  
+    #pagelist ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #pagelist ul li {
+      display: block;
+    }
+  
+    input[name="__pageListInput"] {
+      display: none;
+      
+    }
+  
+    input[name="__pageListInput"]:checked + #pagelist {
+      transform: translateX(0);
+      box-shadow: 8px 0 20px rgba(0, 0, 0, 0.27);
+    }
+  
+    input[name="__pageListInput"]:checked + #pagelist label {
+      opacity: 1;
+    }
+  
+    #pagelist ul li a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 20px;
+  
+      font-size: 14px;
+      line-height: 18px;
+      transition: color .3s, background-color .3s;
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+  
+    #pagelist ul li a:hover {
+      background-color: rgba(0, 0, 0, .35);
+      color: #fff;
+    }
+  
+    #pagelist label{
+      position: absolute;
+      height: 38px;
+      line-height: 36px;
+      background-color: #272c31;
+      left: 100%;
+      top: 0;
+      cursor: pointer;
+      padding-left: 20px;
+      padding-right: 40px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      opacity: .5;
+      transition: opacity .3s;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      white-space: nowrap;
+    }
+  
+    #pagelist label span {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fff;
+      color: #000;
+      position: absolute;
+      font-size: 11px;
+      line-height: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 21px;
+      top: 50%;
+      margin-top: -10px;
+      right: 10px;
+    }
+  
+    #pagelist label:hover {
+      opacity: 1;
+    }
+    #pagelist > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding-top: 32px;
+    }
+  </style>
+  <input type="checkbox" name="__pageListInput" id="__pageListInput">
+  <div id="pagelist">
+    <label for="__pageListInput">pages <span>11</span>
+    </label>
+    <div>
+      <ul>
+        <li><a href="/">1.&nbsp;Главная страница</a>
+        </li>
+        <li><a href="/invest.html">2.&nbsp;Инвестиции</a>
+        </li>
+        <li><a href="/trading.html">3.&nbsp;Трейдинг</a>
+        </li>
+        <li><a href="/about.html">4.&nbsp;О компании</a>
+        </li>
+        <li><a href="/learn_trading.html">5.&nbsp;Обучение</a>
+        </li>
+        <li><a href="/corporate.html">6.&nbsp;Корпоративным клиентам</a>
+        </li>
+        <li><a href="/analytics.html">7.&nbsp;Аналитика</a>
+        </li>
+        <li><a href="/investors.html">8.&nbsp;Инвесторам и&nbsp;акционерам</a>
+        </li>
+        <li><a href="/economist.html">9.&nbsp;Страничка главного экономиста</a>
+        </li>
+        <li><a href="/404.html">10.&nbsp;Страница 404</a>
+        </li>
+        <li><a href="/style.html">11.&nbsp;Страница стилей</a>
+        </li>
+      </ul>
+      <div>
+      </div>
+      <!-- / PageList  -->
+      <script src="javascripts/jquery-3.3.1.min.js"></script>
+      <script src="javascripts/libs.js"></script>
 
-  <script src="javascripts/common.js"></script>
+      <script src="javascripts/common.js"></script>
 </body>
 
 </html>
